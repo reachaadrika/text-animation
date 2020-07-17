@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(picaso.jpg);
+    font-family: monospace;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 100vh;
+    filter: drop-shadow(8px,8px,10px,grey);
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.wrapper h2{
+    color:black;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 2px 0 blanchedalmond;
+
+}
+.wrapper p{
+    color: black;
+    font-size:30px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 2px 0 blanchedalmond;
+}
+.wrapper button{
+    background-color:crimson;
+    border-radius:10px;
+    display: inline-block ;
+    padding: 10px 25px;
+    text-align: center;
+    text-shadow: white;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.wrapper button:hover{
+    background-color:cornflowerblue;
+    font-size: 30px;
+}
+span::before{
+    content:"";
+    animation: example infinite 8s;
+}
+
+@keyframes example{
+    0%{
+        content: "Mountaineer";
+    }
+    20%{
+        content: "Speaker";
+    }
+    40%{
+        content: "Author";
+    }
+    60%{
+        content: "Enterpreneur";
+    }
+    80%{
+        content: "Teacher";
+    }
+    100%{
+        content:"Photographer"
+    }
+}
